@@ -69,7 +69,7 @@ function generatePage(employees) {
     `
 }
 
-function generateHtml(data) {
+function createHtml(data) {
     const cards = [];
 
     for(let i = 0; i < data.length; i++){
@@ -93,4 +93,4 @@ function generateHtml(data) {
     return generateTeam;
 }
 
-module.exports = generateHtml;
+module.exports = createHtml;
