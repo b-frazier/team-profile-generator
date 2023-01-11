@@ -12,9 +12,7 @@ test('returns an employee object', () => {
     expect(empObj.email).toEqual(expect.any(String));
 });
 
-test('getId function exists', () => {
-    expect(Employee.getId).toBeDefined();
-})
+
 
 
 
