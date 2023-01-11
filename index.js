@@ -28,7 +28,7 @@ function addManager() {
         message: 'Enter manager office number:',
         name: 'manOffice'
     }
-])
+    ])
     .then(answers => {
         const manager = new Manager(answers.manName, answers.manId, answers.manEmail, answers.manOffice);
         team.push(manager);
@@ -61,6 +61,34 @@ function addEngineer() {
     .then(answers => {
         const engineer = new Engineer(answers.engName, answers.engId, answers.engEmail, answers.engGit);
         team.push(engineer);
-        console.log(team)
     })
 }
+
+function addIntern() {
+    inquirer.prompt([
+        {
+            type: 'input', 
+            message: "Enter the intern's name:",
+            name: 'intName'
+        },
+        {
+            type: 'input',
+            message: 'Enter intern ID:',
+            name: 'intId'
+        },
+        {
+            type: 'input',
+            message: 'Enter intern email:',
+            name: 'intEmail'
+        },
+        {
+            type: 'input',
+            message: 'Enter intern school:',
+            name: 'intSchool'
+        }
+    ])
+    .then(answers => {
+        const intern = new Intern(answers.intName, answers.intId, answers.intEmail, answers.intSchool);
+        team.push(intern);
+    })
+};
