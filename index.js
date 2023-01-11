@@ -3,6 +3,7 @@ const fs = require('fs');
 const Manager = require('./lib/manager.js');
 const Engineer = require('./lib/engineer.js');
 const Intern = require('./lib/intern.js');
+const createHTML = require('./src/createHtml.js');
 
 const team = [];
 
