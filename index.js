@@ -7,17 +7,19 @@ const Intern = require('./lib/intern.js');
 const team = [];
 
 function startTeam(){
-    addManager()
     inquirer.prompt([
         {
             type: 'list',
             message: 'What member would you like to add next?',
-            choices: ['Engineer', 'Intern', 'None'],
+            choices: ['Manager', 'Engineer', 'Intern', 'None'],
             name: 'newEmp'
         }
     ])
     .then(function(input){
         switch(input.newEmp){
+            case 'Manager':
+                addManager();
+            break;
             case 'Engineer':
                 addEngineer();
             break;
@@ -117,3 +119,9 @@ function addIntern() {
         team.push(intern);
     })
 };
+
+function createHTML() {
+
+};
+
+startTeam()
