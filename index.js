@@ -1,10 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const Manager = require('./lib/manager.js');
+const Engineer = require('./lib/engineer.js');
+const Intern = require('./lib/intern.js');
 
-// const managerQs = 
 
 function addManager() {
-
  inquirer.prompt([
     {
         type: 'input',
@@ -25,9 +26,3 @@ function addManager() {
 }
 
 addManager();
-
-// function startApp(){
-//     return inquirer.prompt(managerQs)
-// }
-
-// startApp();
