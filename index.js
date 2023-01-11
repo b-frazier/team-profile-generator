@@ -124,8 +124,4 @@ function addIntern() {
     })
 };
 
-function createHTML() {
-
-};
-
 startTeam()
