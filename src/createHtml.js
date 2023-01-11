@@ -28,7 +28,7 @@ function generateEngineer(engineer) {
     `
 }
 
-function generateInter(intern) {
+function generateIntern(intern) {
     return `
     <div class="card" style="width: 18rem;">
     <div class="card-body">
@@ -43,7 +43,7 @@ function generateInter(intern) {
     `
 }
 
-function generateHtml(employees) {
+function generatePage(employees) {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -67,6 +67,30 @@ function generateHtml(employees) {
     </body>
     </html>
     `
+}
+
+function generateHtml(data) {
+    const cards = [];
+
+    for(let i = 0; i < data.length; i++){
+        const employee = data[i];
+        const role = employee.getRole();
+
+        if(role === 'Manager'){
+            const managerCard = generateManager(employee);
+            cards.push(managerCard)
+        } else if (role === 'Engineer') {
+            const engineerCard = generateEngineer(employee);
+            cards.push(engineerCard)
+        } else {
+            const internCard = generateIntern(employee);
+            cards.push(internCard)
+        }
+    }
+
+    const employees = cards.join('');
+    const generateTeam = generatePage(employees);
+    return generateTeam;
 }
 
 module.exports = generateHtml;
