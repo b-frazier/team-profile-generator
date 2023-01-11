@@ -33,6 +33,34 @@ function addManager() {
         const manager = new Manager(answers.manName, answers.manId, answers.manEmail, answers.manOffice);
         team.push(manager);
     })
-}
+};
 
-addManager();
+function addEngineer() {
+    inquirer.prompt([
+        {
+            type: 'input',
+            message: "Enter the engineer's name:",
+            name: 'engName'
+        },
+        {
+            type: 'input',
+            message: 'Enter engineer ID:',
+            name: 'engId'
+        },
+        {
+            type: 'input',
+            message: 'Enter engineer email:',
+            name: 'engEmail'
+        },
+        {
+            type: 'input',
+            message: 'Enter engineer GitHub',
+            name: 'engGit'
+        }
+    ])
+    .then(answers => {
+        const engineer = new Engineer(answers.engName, answers.engId, answers.engEmail, answers.engGit);
+        team.push(engineer);
+        console.log(team)
+    })
+}
