@@ -1,20 +1,33 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const personInfo = [
+// const managerQs = 
+
+function addManager() {
+
+ inquirer.prompt([
     {
         type: 'input',
-        message: 'Team member name:',
-        name: 'name'
+        message: "Enter the team manager's name:",
+        name: 'manName'
     },
     {
         type: 'input',
-        message: 'Team member ID:',
-        name: 'id'
+        message: 'Enter manager ID:',
+        name: 'manId'
     },
     {
         type: 'input',
-        message: 'Team member email:',
-        name: 'email'
+        message: 'Enter manager email:',
+        name: 'manEmail'
     }
-]
+]);
+}
+
+addManager();
+
+// function startApp(){
+//     return inquirer.prompt(managerQs)
+// }
+
+// startApp();
