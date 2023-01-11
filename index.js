@@ -4,6 +4,7 @@ const Manager = require('./lib/manager.js');
 const Engineer = require('./lib/engineer.js');
 const Intern = require('./lib/intern.js');
 
+const team = [];
 
 function addManager() {
  inquirer.prompt([
@@ -22,7 +23,12 @@ function addManager() {
         message: 'Enter manager email:',
         name: 'manEmail'
     }
-]);
+])
+    .then(answers => {
+        const manager = new Manager(answers.manName, answers.manId, answers.manEmail);
+        team.push(manager);
+        console.log('team: ', team)
+    })
 }
 
 addManager();
