@@ -16,7 +16,6 @@ test('getName method returns name', () => {
     const empObj = new Employee('Bianca', 22, 'bianca.frazier90@gmail.com')
 
     expect(empObj.getName()).toEqual('Bianca')
-    expect(empObj.getName()).toEqual(expect.any(String))
 });
 
 test('getId method returns Id', () => {
@@ -24,6 +23,13 @@ test('getId method returns Id', () => {
 
     expect(empObj.getId()).toEqual(22)
 });
+
+test('getEmail method returns email', () => {
+    const empObj = new Employee('Bianca', 22, 'bianca.frazier90@gmail.com')
+
+    expect(empObj.getEmail()).toEqual('bianca.frazier90@gmail.com')
+});
+
 
 
 
