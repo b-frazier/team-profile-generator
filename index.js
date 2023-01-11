@@ -22,12 +22,16 @@ function addManager() {
         type: 'input',
         message: 'Enter manager email:',
         name: 'manEmail'
+    },
+    {
+        type: 'input',
+        message: 'Enter manager office number:',
+        name: 'manOffice'
     }
 ])
     .then(answers => {
-        const manager = new Manager(answers.manName, answers.manId, answers.manEmail);
+        const manager = new Manager(answers.manName, answers.manId, answers.manEmail, answers.manOffice);
         team.push(manager);
-        console.log('team: ', team)
     })
 }
 
