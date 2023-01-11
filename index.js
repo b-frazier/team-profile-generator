@@ -27,7 +27,8 @@ function startTeam(){
                 addIntern();
             break;
             case 'None':
-                createHTML();
+                console.log(team)
+                //createHTML();
             break;
         }
     })
@@ -59,6 +60,7 @@ function addManager() {
     .then(answers => {
         const manager = new Manager(answers.manName, answers.manId, answers.manEmail, answers.manOffice);
         team.push(manager);
+        startTeam();
     })
 };
 
@@ -81,13 +83,14 @@ function addEngineer() {
         },
         {
             type: 'input',
-            message: 'Enter engineer GitHub',
+            message: 'Enter engineer GitHub:',
             name: 'engGit'
         }
     ])
     .then(answers => {
         const engineer = new Engineer(answers.engName, answers.engId, answers.engEmail, answers.engGit);
         team.push(engineer);
+        startTeam();
     })
 }
 
@@ -117,6 +120,7 @@ function addIntern() {
     .then(answers => {
         const intern = new Intern(answers.intName, answers.intId, answers.intEmail, answers.intSchool);
         team.push(intern);
+        startTeam();
     })
 };
 
