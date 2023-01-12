@@ -1,8 +1,9 @@
 header {
-    background-color: #6c89d3;
+    background-color: rgb(108, 137, 211);
+    padding: 10px 0 10px 0;
 }
 
 .card {
-    margin: 0 5px 0 5px;
-    box-shadow: 0 5px 8px 10px;
+    margin: 30px 8px 0 8px;
+    box-shadow: 0 0 12px 3px rgba(108, 137, 211, 0.4);
 }
