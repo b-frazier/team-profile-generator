@@ -1,6 +1,6 @@
 function generateManager(manager) {
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20rem;">
     <div class="card-body">
         <h5 class="card-title">${manager.getName()}</h5>
         <p class="card-text">${manager.getRole()}</p>
@@ -16,7 +16,7 @@ function generateManager(manager) {
 
 function generateEngineer(engineer) {
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20rem;">
     <div class="card-body">
         <h5 class="card-title">${engineer.getName()}</h5>
         <p class="card-text">${engineer.getRole()}</p>
@@ -24,7 +24,7 @@ function generateEngineer(engineer) {
     <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${engineer.getId()}</li>
         <li class="list-group-item">Email: <a href="mailto: ${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-        <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank"></a></li>
+        <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank">https://github.com/${engineer.getGithub()}</a></li>
     </ul>
     </div>
     `
@@ -32,7 +32,7 @@ function generateEngineer(engineer) {
 
 function generateIntern(intern) {
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20rem;">
     <div class="card-body">
         <h5 class="card-title">${intern.getName()}</h5>
         <p class="card-text">${intern.getRole()}</p>
