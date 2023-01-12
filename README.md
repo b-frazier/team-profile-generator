@@ -5,6 +5,7 @@
 
   ## Table of Contents
   - [Installation](#installation)
+  - [Demonstration](#Demonstration)
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
@@ -12,7 +13,13 @@
   - [Questions](#questions)
 
   ## Installation
-  
+
+  ## Demonstration
+  ### Video
+  https://drive.google.com/file/d/1gOoRDSojn1Li1uk8oytzRnE8yfBg1StQ/view
+
+  ### Screenshot
+  <img src="./assets/final-page.png" width="700">
 
   ## Usage
   This project should be used to quickly takedown information on team members or employees for easy access.
