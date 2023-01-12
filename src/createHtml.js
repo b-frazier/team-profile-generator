@@ -7,9 +7,10 @@ function generateManager(manager) {
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${manager.getId()}</li>
-        <li class="list-group-item">Email: <a href="mailto: ${manager.getEmail()}">${manager.getEmail()}</li>
+        <li class="list-group-item">Email: <a href="mailto: ${manager.getEmail()}">${manager.getEmail()}</a></li>
         <li class="list-group-item">Office Number: ${manager.getOffice()}</li>
     </ul>
+    </div>
     `
 }
 
@@ -23,8 +24,9 @@ function generateEngineer(engineer) {
     <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${engineer.getId()}</li>
         <li class="list-group-item">Email: <a href="mailto: ${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-        <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGit()}" target="_blank"></a></li>
+        <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank"></a></li>
     </ul>
+    </div>
     `
 }
 
@@ -40,6 +42,7 @@ function generateIntern(intern) {
         <li class="list-group-item">Email: <a href="mailto: ${intern.getEmail()}">${intern.getEmail()}</a></li>
         <li class="list-group-item">School: ${intern.getSchool()}</li>
     </ul>
+    <div>
     `
 }
 
