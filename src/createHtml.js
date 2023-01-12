@@ -60,7 +60,7 @@ function generatePage(employees) {
     </head>
     <body>
         <header>
-            <h1 class="text-center">TEAM PROFILE</h1>
+            <h1 class="text-center">TEAM PROFILES</h1>
         </header>
         <div class="container">
             <div class="row justify-content-center" id="cards">
