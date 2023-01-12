@@ -16,7 +16,7 @@
 
   ## Demonstration
   ### Video
-  https://drive.google.com/file/d/1gOoRDSojn1Li1uk8oytzRnE8yfBg1StQ/view
+  - https://drive.google.com/file/d/1zRQsW5sG7LlzWtscHE-LY7IKqbaOsHPJ/view
 
   ### Screenshot
   <img src="./assets/final-page.png" width="700">
