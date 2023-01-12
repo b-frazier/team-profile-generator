@@ -42,7 +42,7 @@ function generateIntern(intern) {
         <li class="list-group-item">Email: <a href="mailto: ${intern.getEmail()}">${intern.getEmail()}</a></li>
         <li class="list-group-item">School: ${intern.getSchool()}</li>
     </ul>
-    <div>
+    </div>
     `
 }
 
